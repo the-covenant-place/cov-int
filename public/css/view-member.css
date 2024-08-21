@@ -1,0 +1,51 @@
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.container p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.container p span.label {
+    font-weight: bold;
+    font-size: 20px;
+    color: #555;
+    display: inline-block;
+    width: 155px;
+}
+
+.container p span.value {
+    font-size: 18px;
+    color: #333;
+}
+
+button {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    background-color: #6c5ce7;
+    padding: 10px 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #4834d4;
+}

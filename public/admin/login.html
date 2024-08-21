@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="../css/form-styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            var passwordField = document.getElementById('password');
+            if (passwordField) {
+                passwordField.value = '';
+            }
+        });
+    </script>
+
+</head>
+<body>
+    <div class="form-container">
+        <h2>Admin Login</h2>
+        <form action="../../src/controllers/admin-login-process.php" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required pattern="[a-zA-Z0-9_]+" title="Only letters, numbers, and undercores are allowed">
+            <span class="error-message" id="usernameError"></span>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required minlength="8" title="Password must be atleast 8 characters long">
+            <span class="error-message" id="passwordError"></span>
+
+            <input type="submit" value="Login">
+        </form>
+        <script>
+            window.onload = function() {
+                var passwordField = document.getElementById('password');
+                if (passwordField) {
+                    passwordField.value = '';
+                }
+            };
+        </script>
+    </div>
+
+    <script src="../js/login-validation.js"></script>
+    
+</body>
+</html>
